@@ -1,3 +1,10 @@
 body {
-  background-color: yellow;
+  /*background-color: yellow;*/
+  background-image: url("http://img.clipartall.com/military-20clipart-military-clipart-600_275.png");
+  background-color: #cccccc;
+  color: red;
+}
+p {
+  font-family: fantasy;
+  font-size: 1.5em;
 }
