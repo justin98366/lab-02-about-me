@@ -1,10 +1,10 @@
 'use strict';
 
-console.log("var games asks the user if I play video games");
-console.log("var juice asks the user if I like grapejuice");
-console.log("var travel asks the user if I have ever lived abroad");
-console.log("var animals asks the user if I like animals");
-console.log("var people asks the user if I like people");
+console.log("var = games asks the user if I play video games");
+console.log("var = juice asks the user if I like grapejuice");
+console.log("var = travel asks the user if I have ever lived abroad");
+console.log("var = animals asks the user if I like animals");
+console.log("var = people asks the user if I like people");
 
 var games = prompt('Do I love to play video games? (answer yes or no)');
 if (games.trim().toLowerCase() == 'yes' || games.trim().toLowerCase() == 'y' ){
