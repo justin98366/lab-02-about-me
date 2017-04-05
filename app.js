@@ -60,3 +60,28 @@
 // else{
 //   alert("Your response wasn't yes or no!");
 // }
+
+var number = 7;
+var rightNum;
+for ( var num = 0; num < 4; num++){
+  var rightNum = prompt('What is my favorite number?');
+  rightNum = parseInt(rightNum);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
