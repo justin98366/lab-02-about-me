@@ -66,6 +66,19 @@ var rightNum;
 for ( var num = 0; num < 4; num++){
   var rightNum = prompt('What is my favorite number?');
   rightNum = parseInt(rightNum);
+
+  if(rightNum === number){
+    alert('Wow! You guessed the correct number!!');
+
+  }else if(num === 3){
+      alert('You ran out of guesses!');
+
+  }else if(rightNum > number){
+    alert('You\'re too high!');
+
+  }else{
+    alert('You\'re too low!');
+  }
 }
 
 
