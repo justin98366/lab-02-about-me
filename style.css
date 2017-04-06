@@ -3,24 +3,19 @@
 
 body {
   background-color: black;
-  /*background-image: url("https://pix-media.priceonomics-media.com/blog/1238/generic.jpg");
-  background-color: #cccccc;*/
   color: red;
 }
 p {
-  /*border: 2px dotted blue;*/
   font-family: fantasy;
   font-size: 1.5em;
 }
 h2 {
-  /*border: 2px dotted blue;*/
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 400px;
 }
 h3 {
-  /*border: 2px dotted blue;*/
   margin-left: auto;
   margin-right: auto;
   text-align: center;

@@ -67,15 +67,15 @@ if (people == null) {
 }
 
 var number = 7;
-var done = true;
+var notDone = true;
 var rightNum;
-for (var num = 4; num > 0 && done; num--){
+for (var num = 4; num > 0 && notDone; num--){
   var rightNum = prompt('What is my favorite number?');
   rightNum = parseInt(rightNum);
 
   if(rightNum === number){
     alert('Wow! You guessed the correct number!!');
-    done = false;
+    notDone = false;
 
   }else if(num === 1){
       alert('You ran out of guesses!');
@@ -89,14 +89,14 @@ for (var num = 4; num > 0 && done; num--){
 }
 
 var countries = ['afghanistan', 'italy', 'germany']
-var rightCountry;
-var done2 = true;
-for (var place = 0; place < 6 && done2; place++){
-  var rightCountry = prompt('Can you name a country that I lived in?');
+var guessCountry;
+notDone = true;
+for (var place = 0; place < 6 && notDone; place++){
+  guessCountry = prompt('Can you name a country that I lived in?');
 
-  if (rightCountry.toLowerCase() === countries[0] || rightCountry.toLowerCase() === countries[1] || rightCountry.toLowerCase() === countries[2]){
+  if (guessCountry.toLowerCase() === countries[0] || guessCountry.toLowerCase() === countries[1] || guessCountry.toLowerCase() === countries[2]){
     alert('Wow! You guessed a country I lived in!');
-    done2 = false;
+    notDone = false;
 
   }else if(place === 5){
     alert('You ran out of guesses!!');
@@ -108,12 +108,14 @@ for (var place = 0; place < 6 && done2; place++){
 }
 
 var tally = 0;
-if(rightCountry === 'italy'){
-     tally++;
-}
-if(rightCountry === 'germany'){
-  tally++;
-}if(rightCountry === 'afghanistan'){
+// if(rightCountry === 'italy'){
+//      tally++;
+// }
+// if(rightCountry === 'germany'){
+//   tally++;
+//}
+
+if(rightCountry === 'afghanistan' || rightCountry === 'germany' || rightCountry === 'italy'){
   tally++;
 }if (rightNum === 7){
   tally++;
@@ -150,22 +152,3 @@ if(tally > 5){
 }else{
   alert('You don\'t know me very much!');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
