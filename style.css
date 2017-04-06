@@ -1,10 +1,31 @@
+
+
+
 body {
-  /*background-color: yellow;*/
-  background-image: url("https://pix-media.priceonomics-media.com/blog/1238/generic.jpg");
-  background-color: #cccccc;
+  background-color: black;
   color: red;
 }
 p {
   font-family: fantasy;
-  font-size: 2em;
+  font-size: 1.5em;
+}
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 400px;
+}
+h3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 400px;
+}
+
+ul {
+  margin-left: 400px;
+}
+
+ol{
+  margin-left: 400px;
 }
