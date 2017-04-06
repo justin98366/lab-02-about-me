@@ -18,6 +18,7 @@ function askQuestion(question, yesAnswer, noAnswer) {
   }else{
     alert("Your response wasn't yes or no!");
   }
+  console.log(question, response);
   return response;
 }
 var games = askQuestion('Do I love to play video games? (answer yes or no)', 'You are correct!', 'I play video games just about everyday!');
@@ -30,41 +31,43 @@ var people = askQuestion('Do I like people? (answer yes or no)', 'You are correc
 function numberQuestion() {
   var number = 7;
   var notDone = true;
-  var rightNum;
-  for (var num = 4; num > 0 && notDone; num--){
-    var rightNum = prompt('What is my favorite number?');
-    rightNum = parseInt(rightNum);
+  var guessNum;
+  for (var i = 4; i > 0 && notDone; i--){
+    guessNum = prompt('What is my favorite number?');
+    guessNum = parseInt(guessNum);
 
-    if(rightNum === number){
+    if(guessNum === number){
       alert('Wow! You guessed the correct number!!');
       notDone = false;
+      console.log('number answered correctly');
 
-    }else if(num === 1){
+    }else if(i === 1){
       alert('You ran out of guesses!');
 
-    }else if(rightNum > number){
+    }else if(guessNum > number){
       alert('You\'re too high!');
 
     }else{
       alert('You\'re too low!');
     }
   }
-  return rightNum;
+  return guessNum;
 }
-var rightNum = numberQuestion();
+var guessNum = numberQuestion();
 
 function countriesQuestion() {
   var countries = ['afghanistan', 'italy', 'germany']
   var guessCountry;
   var notDone = true;
-  for (var place = 0; place < 6 && notDone; place++){
+  for (var i = 0; i < 6 && notDone; i++){
     guessCountry = prompt('Can you name a country that I lived in?');
 
     if (guessCountry.toLowerCase() === countries[0] || guessCountry.toLowerCase() === countries[1] || guessCountry.toLowerCase() === countries[2]){
-      alert('Wow! You guessed a country I lived in!');
+      alert('Wow! ' + guessCountry + ' is correct!');
       notDone = false;
+      console.log('country answered correctly');
 
-    }else if(place === 5){
+    }else if(i === 5){
       alert('You ran out of guesses!!');
 
     }else{
@@ -74,15 +77,15 @@ function countriesQuestion() {
   }
   return guessCountry;
 }
-var rightCountry = countriesQuestion();
+var guessCountry = countriesQuestion();
 
 
 function printTally() {
   var tally = 0;
 
-  if(rightCountry === 'afghanistan' || rightCountry === 'germany' || rightCountry === 'italy'){
+  if(guessCountry === 'afghanistan' || guessCountry === 'germany' || guessCountry === 'italy'){
     tally++;
-  }if (rightNum === 7){
+  }if (guessNum === 7){
     tally++;
   }if(games === null){
     tally = tally;
