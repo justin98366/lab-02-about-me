@@ -6,85 +6,26 @@ console.log("var = travel asks the user if I have ever lived abroad");
 console.log("var = animals asks the user if I like animals");
 console.log("var = people asks the user if I like people");
 
-function gamesQuestion() {
-  var games = prompt('Do I love to play video games? (answer yes or no)');
+function askQuestion(question, yesAnswer, noAnswer) {
+  var response = prompt(question);
 
-  if (games == null) {
+  if (response == null) {
     alert('Canceled');
-  }else if (games.trim().toLowerCase() == 'yes' || games.trim().toLowerCase() == 'y' ){
-    alert('You are correct!');
-  }else if (games.trim().toLowerCase() == 'no' || games.trim().toLowerCase() == 'n' ){
-    alert('I play video games just about everyday!');
+  }else if (response.trim().toLowerCase() == 'yes' || response.trim().toLowerCase() == 'y' ){
+    alert(yesAnswer);
+  }else if (response.trim().toLowerCase() == 'no' || response.trim().toLowerCase() == 'n' ){
+    alert(noAnswer);
   }else{
     alert("Your response wasn't yes or no!");
   }
-  return games;
+  return response;
 }
-var games = gamesQuestion();
+var games = askQuestion('Do I love to play video games? (answer yes or no)', 'You are correct!', 'I play video games just about everyday!');
+var juice = askQuestion('Do I like grapejuice? (answer yes or no)', 'Bleh, I hate it!', 'You are correct!');
+var travel = askQuestion("Do you think that I've ever lived abroad? (answer yes or no)", 'You are correct!', 'I lived in Italy and Afghanistan!');
+var animals = askQuestion("Am I an animal lover? (answer yes or no)", 'You are correct!', 'But I LOVE animals!');
+var people = askQuestion('Do I like people? (answer yes or no)', 'You are correct!', 'What kind of person do you think I am!?');
 
-function juiceQuestion() {
-  var juice = prompt('Do I like grapejuice? (answer yes or no)');
-
-  if (juice == null) {
-    alert('Canceled');
-  }else if (juice.trim().toLowerCase() == 'yes' || juice.trim().toLowerCase() == 'y' ){
-    alert('Bleh, I hate it!');
-  }else if (juice.trim().toLowerCase() == 'no' || juice.trim().toLowerCase() == 'n' ){
-    alert('You are correct!')
-  }else{
-    alert("Your resonse wasn't yes or no!");
-  }
-  return juice;
-}
-var juice = juiceQuestion();
-
-function travelQuestion() {
-  var travel = prompt("Do you think that I've ever lived abroad? (answer yes or no)");
-
-  if (travel == null) {
-    alert('Canceled');
-  }else if (travel.trim().toLowerCase() == 'yes' || travel.trim().toLowerCase() == 'y' ){
-    alert('You are correct!');
-  }else if (travel.trim().toLowerCase() == 'no' || travel.trim().toLowerCase() == 'n' ){
-    alert('I lived in Italy and Afghanistan!');
-  }else{
-    alert("Your response wasn't yes or no!");
-  }
-  return travel;
-}
-var travel = travelQuestion();
-
-function animalsQuestion() {
-  var animals = prompt("Am I an animal lover? (answer yes or no)");
-
-  if (animals == null) {
-    alert('Canceled');
-  }else if (animals.trim().toLowerCase() == 'yes' || animals.trim().toLowerCase() == 'y' ){
-    alert('You are correct!');
-  }else if (animals.trim().toLowerCase() == 'no' || animals.trim().toLowerCase() == 'n' ){
-    alert('But I LOVE animals!');
-  }else{
-    alert("Your response wasn't yes or no!");
-  }
-  return animals;
-}
-var animals = animalsQuestion();
-
-function peopleQuestion() {
-  var people = prompt('Do I like people? (answer yes or no)');
-
-  if (people == null) {
-    alert('Canceled');
-  }else if (people.trim().toLowerCase() == 'yes' || people.trim().toLowerCase() == 'y' ){
-    alert('You are correct!');
-  }else if (people.trim().toLowerCase() == 'no' || people.trim().toLowerCase() == 'n' ){
-    alert('What kind of person do you think I am!?');
-  }else{
-    alert("Your response wasn't yes or no!");
-  }
-  return people;
-}
-var people = peopleQuestion();
 
 function numberQuestion() {
   var number = 7;
