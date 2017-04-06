@@ -20,7 +20,7 @@ var games = prompt('Do I love to play video games? (answer yes or no)');
 
 var juice = prompt('Do I like grapejuice? (answer yes or no)');
 
-  if (games == null) {
+  if (juice == null) {
     alert('Canceled');
   }else if (juice.trim().toLowerCase() == 'yes' || juice.trim().toLowerCase() == 'y' ){
     alert('Bleh, I hate it!');
@@ -32,7 +32,7 @@ var juice = prompt('Do I like grapejuice? (answer yes or no)');
 
 var travel = prompt("Do you think that I've ever lived abroad? (answer yes or no)");
 
-  if (games == null) {
+  if (travel == null) {
     alert('Canceled');
   }else if (travel.trim().toLowerCase() == 'yes' || travel.trim().toLowerCase() == 'y' ){
     alert('You are correct!');
@@ -44,7 +44,7 @@ var travel = prompt("Do you think that I've ever lived abroad? (answer yes or no
 
 var animals = prompt("Am I an animal lover? (answer yes or no)");
 
-if (games == null) {
+if (animals == null) {
   alert('Canceled');
 }else if (animals.trim().toLowerCase() == 'yes' || animals.trim().toLowerCase() == 'y' ){
   alert('You are correct!');
@@ -56,7 +56,7 @@ if (games == null) {
 
 var people = prompt('Do I like people? (answer yes or no)');
 
-if (games == null) {
+if (people == null) {
   alert('Canceled');
 }else if (people.trim().toLowerCase() == 'yes' || people.trim().toLowerCase() == 'y' ){
   alert('You are correct!');
