@@ -53,7 +53,7 @@ function numberQuestion() {
   }
   return guessNum;
 }
-var guessNum = numberQuestion();
+var numGuess = numberQuestion();
 
 function countriesQuestion() {
   var countries = ['afghanistan', 'italy', 'germany']
@@ -77,15 +77,15 @@ function countriesQuestion() {
   }
   return guessCountry;
 }
-var guessCountry = countriesQuestion();
+var countryGuess = countriesQuestion();
 
 
 function printTally() {
   var tally = 0;
 
-  if(guessCountry === 'afghanistan' || guessCountry === 'germany' || guessCountry === 'italy'){
+  if(countryGuess === 'afghanistan' || countryGuess === 'germany' || countryGuess === 'italy'){
     tally++;
-  }if (guessNum === 7){
+  }if (numGuess === 7){
     tally++;
   }if(games === null){
     tally = tally;
