@@ -62,7 +62,9 @@ function countriesQuestion() {
   for (var i = 0; i < 6 && notDone; i++){
     guessCountry = prompt('Can you name a country that I lived in?');
 
-    if (guessCountry.toLowerCase() === countries[0] || guessCountry.toLowerCase() === countries[1] || guessCountry.toLowerCase() === countries[2]){
+    if (guessCountry == null) {
+      alert('Canceled');
+    }else if (guessCountry.toLowerCase() === countries[0] || guessCountry.toLowerCase() === countries[1] || guessCountry.toLowerCase() === countries[2]){
       alert('Wow! ' + guessCountry + ' is correct!');
       notDone = false;
       console.log('country answered correctly');
